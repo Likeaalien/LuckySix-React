@@ -1,9 +1,13 @@
+import { LuckySixInstance } from '../blockchain/luckysix';
 import './style.css' 
 
 export const Header = () => {
+
+    const LuckySix = LuckySixInstance();
+
     return (
         <div className="Header">
-            <button>Connect your wallet</button>
+            <button onClick={() => LuckySix.getDrawnNumbersForRound(4)}>Connect your wallet</button>
         </div>
     )
 }
