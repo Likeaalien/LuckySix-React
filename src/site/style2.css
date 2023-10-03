@@ -1,0 +1,6 @@
+.RoundShow, .RoundNumber{
+    margin-top: 5em;
+    padding: 10px;
+    border: 1px solid green;
+    justify-content: center;
+}

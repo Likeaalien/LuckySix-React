@@ -1,7 +1,8 @@
-import { Input } from './input';
-import { Name } from './name';
-import { Button } from './button';
-import { Crypto } from './currency';
+import { Input } from './bodyItems';
+import { Name } from './bodyItems';
+import { Button } from './bodyItems';
+import { Crypto } from './bodyItems';
+import { RoundNumber } from "./bodyItems";
 
 
 export const Body = () => {
@@ -9,8 +10,9 @@ export const Body = () => {
         <div>
             <Name/>
             <Input/>
-            <Crypto></Crypto>
+            <Crypto/>
             <Button/>
+            <RoundNumber/>
         </div>
     )
 }

@@ -10,9 +10,10 @@ export const LuckySixInstance = () => {
             const provider = new ethers.BrowserProvider(window.ethereum);
             const LuckySixContract = new ethers.Contract(contractAddress, LuckySix.abi, provider);
 
-            console.log(await LuckySixContract.drawnNumbers(roundNumber))
+            return await LuckySixContract.drawnNumbers(roundNumber);
         } catch(err) {
-            console.log(err);
+            //console.log(err);
+            return err;
         }
     }
 
